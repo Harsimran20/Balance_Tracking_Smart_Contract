@@ -14,6 +14,7 @@ This is a basic Ethereum smart contract written in Solidity that functions as a 
 - Remix IDE (or compatible Ethereum development environment)
 
 🔒 Security Note
+
 This contract is for educational purposes only. It does not include advanced security protections. Use in production at your own risk.
 
 🧪 How to Use
