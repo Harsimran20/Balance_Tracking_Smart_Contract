@@ -13,23 +13,6 @@ This is a basic Ethereum smart contract written in Solidity that functions as a 
 - Ethereum Virtual Machine (EVM)
 - Remix IDE (or compatible Ethereum development environment)
 
-## 📦 Contract Overview
-```solidity
-mapping(address => uint) public balances;
-
-function deposit() public payable {
-    balances[msg.sender] += msg.value;
-}
-
-function withdraw(uint amount) public {
-    require(balances[msg.sender] >= amount, "Insufficient Balance");
-    balances[msg.sender] -= amount;
-    payable(msg.sender).transfer(amount);
-}
-
-function checkBalance() public view returns (uint) {
-    return balances[msg.sender];
-}
 🔒 Security Note
 This contract is for educational purposes only. It does not include advanced security protections. Use in production at your own risk.
 
